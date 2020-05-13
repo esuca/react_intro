@@ -1,8 +1,18 @@
-import React from "react";
+import React, {PropsWithChildren} from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import userEvent from "@testing-library/user-event";
-import {Button} from "../exercises/02";
+// import {Button} from "../exercises-solution/02";
+
+interface Props {
+    onClick?: any
+    isLoading?: any
+}
+
+function Button(props: PropsWithChildren<Props>) {
+    return <button onClick={props.onClick}>{props.children}</button>;
+}
+
 
 describe.skip("02. Props", () => {
     test("como desarrollador quiero que se llame a la prop 'onClick' cuando se haga click en el botón", () => {

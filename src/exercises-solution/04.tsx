@@ -19,9 +19,23 @@ export function Counter(props: Props) {
         <div>
             <button onClick={handleIncrement}>Increment</button>
             <span>Count: {countValue}</span>
-            <button onClick={handleDecrement} disabled={countValue === 0}>
-                Decrement
-            </button>
-        </div>
-    );
+    <button onClick={handleDecrement} disabled={countValue === 0}>
+    Decrement
+    </button>
+    </div>
+);
+}
+
+export function useCounter(initialCountValue?: number) {
+    const [countValue, setCountValue] = useState(0)
+
+    function handleIncrement() {
+       setCountValue(countValue + 1)
+    }
+
+    function handleDecrement() {
+        setCountValue(countValue - 1)
+    }
+
+    return { countValue, handleIncrement, handleDecrement }
 }

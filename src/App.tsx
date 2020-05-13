@@ -3,8 +3,18 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hola a todos</h1>
+    <div>
+      <Toggle />
     </div>
   );
+}
+
+function Toggle() {
+    const isActive = 0
+    return (
+        <div>
+            <button>Toggle</button>
+            <span>{isActive ? "on" : "off"}</span>
+        </div>
+    );
 }

@@ -1,8 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
-import {Counter} from "../exercises/03";
+// import {Counter} from "../exercises-solution/03";
+
+interface Props {
+  initialCountValue?: number
+}
+
+function Counter(props: Props) {
+  const [countValue, setCountValue] = useState(0)
+
+  function handleIncrement() {
+    // ...
+  }
+
+  function handleDecrement() {
+    // ...
+  }
+
+  return (
+      <div>
+        <button onClick={handleIncrement}>Increment</button>
+        <span>Count: {countValue}</span>
+        <button onClick={handleDecrement} disabled={undefined}>
+          Decrement
+        </button>
+      </div>
+  );
+}
 
 describe.skip("03. Review State & Props", () => {
   test("como usuario quiero ver 'Count: 0' cuando se renderize el componente por primera vez", () => {
@@ -38,12 +64,4 @@ describe.skip("03. Review State & Props", () => {
 
     expect(screen.getByText("Count: 1")).toBeInTheDocument();
   });
-
-  /*
-    Nuevos requisitos:
-
-    - Abstraer la lógica del componente a un custom hook llamado 'useCounter'
-
-  */
-
 })
