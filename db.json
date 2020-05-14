@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageUrl": "https://via.placeholder.com/550/384259/ffffff",
+      "title": "Lorem ipsum dolor sit amet",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://via.placeholder.com/550/f73859/fffffff",
+      "title": "Consectetur adipisicing elit",
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://via.placeholder.com/550/009975/ffffff",
+      "title": "Alias culpa, eaque eligendi",
+      "price": 20
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://via.placeholder.com/550/ffd460/ffffff",
+      "title": "Exercitationem fuga iure minima",
+      "price": 90
+    }
+  ]
+}

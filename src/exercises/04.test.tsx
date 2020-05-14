@@ -17,7 +17,7 @@ interface Props {
 // Después de mover la lógica de Counter al hook useCounter, podemos usar el hook como una función más
 // const { countValue, handleIncrement, handleDecrement } = useCounter()
 export function Counter(props: Props) {
-    const [countValue, setCountValue] = useState(0)
+    const [countValue, setCountValue] = useState(props.initialCountValue || 0)
 
     function handleIncrement() {
         setCountValue(countValue + 1)
