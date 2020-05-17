@@ -3,26 +3,50 @@
     {
       "id": 1,
       "imageUrl": "https://via.placeholder.com/550/384259/ffffff",
-      "title": "Lorem ipsum dolor sit amet",
+      "description": "Gafas de sol redondas diseño pro",
       "price": 100
     },
     {
       "id": 2,
       "imageUrl": "https://via.placeholder.com/550/f73859/fffffff",
-      "title": "Consectetur adipisicing elit",
+      "description": "Gafas de sol polarizadas diseño extreme",
       "price": 49.99
     },
     {
       "id": 3,
       "imageUrl": "https://via.placeholder.com/550/009975/ffffff",
-      "title": "Alias culpa, eaque eligendi",
+      "description": "Gafas de sol para ciclismo",
       "price": 20
     },
     {
       "id": 4,
-      "imageUrl": "https://via.placeholder.com/550/ffd460/ffffff",
-      "title": "Exercitationem fuga iure minima",
+      "imageUrl": "https://via.placeholder.com/550/ff3480/ffffff",
+      "description": "Gafas del sol para el metro",
       "price": 90
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://via.placeholder.com/550/143259/ffffff",
+      "description": "Gafas a juego con el IPhone 12",
+      "price": 250
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://via.placeholder.com/550/f74449/fffffff",
+      "description": "Gafas con IA 3.0",
+      "price": 100
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://via.placeholder.com/550/111975/ffffff",
+      "description": "Solo gafas, solo pasión",
+      "price": 400
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://via.placeholder.com/550/f3f460/ffffff",
+      "description": "Gafas cuadradas temporada pasada",
+      "price": 10
     }
   ]
 }

@@ -9,7 +9,7 @@ export function ProductCard(props: Props) {
     return (
         <div className="products-list__card">
             <img src={props.product.imageUrl} width={150} height="auto" />
-            <p>{props.product.title}</p>
+            <p>{props.product.description}</p>
             <div className="products-list__card-footer">
                 <span>{props.product.price}€</span>
                 <button>

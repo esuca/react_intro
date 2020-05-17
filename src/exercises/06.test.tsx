@@ -14,7 +14,7 @@ function Languages() {
 
     function addLanguage() {
         const languageToAdd = "React" // NO cambies el valor para que pase el test
-        // Recuerda que el array que tienes que pasar a la función setLanguages()
+        // Recuerda que el array que tienes que pasar a setLanguages()
         // Tiene que tener una dirección en memoria diferente.
         // Para ello copia el contenido del array actual en otro y añade "React".
 
@@ -33,8 +33,6 @@ function Languages() {
 }
 
 describe.skip("06. Update an array or object", () => {
-
-
     test.skip("cuando el usuario haga click en el botón 'Add language' debería aparecer React en la lista de lenguages", () => {
         render(<Languages />)
 
@@ -45,5 +43,4 @@ describe.skip("06. Update an array or object", () => {
 
         expect(screen.queryByText("React")).not.toBeInTheDocument()
     })
-
 })
